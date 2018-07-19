@@ -1,5 +1,15 @@
 {
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "removeComments": true,
+    "module": "commonjs",
+    "target": "es5",
+    "jsx": "react"
+  },
   "include": [
+    "src/**/*.tsx",
     "src/**/*.ts"
   ],
   "exclude": [
