@@ -1,10 +1,19 @@
 import * as React from 'react';
 
-interface AppProps {
-}
+import styled from '../styled-component';
 
-export default class App extends React.Component<AppProps, {}> {
+import Sidebar from './sidebar/Sidebar';
+
+const Container = styled.div`
+  border: 1px solid red;
+`;
+
+export default class App extends React.Component<{}, {}> {
   render() {
-    return <div>Hello, World!</div>;
+    return (
+      <Container>
+        <Sidebar/>
+      </Container>
+    );
   }
 }
